@@ -1,8 +1,8 @@
 const CACHE_NAME = 'billetera-cache-v1';
 const urlsToCache = [
   'index.html',
-  'css/estilos.css',
-  'js/app.js',
+  'estilos.css',
+  'app.js',
   'manifest.json',
   'icon-192.png',
   'icon-512.png'
