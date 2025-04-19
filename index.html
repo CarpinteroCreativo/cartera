@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Control de carteras y saldos." />
+  <meta name="keywords" content="HTML, carteras, finanzas" />
+  <meta name="author" content="Tu Nombre" />
+  <title>Home</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+  <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#4CAF50">
+<link rel="icon" href="icon-192.png">
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('serviceWorker.js')
+      .then(() => console.log('Service Worker registrado'));
+  }
+</script>
+</head>
+<body>
+  <header>
+    <h1>Carteras</h1>
+  </header>
+
+  <main>
+    <section class="saldo-total">
+      <small>Saldo total</small>
+      <h1>$<strong id="st">0.00</strong></h1>
+    </section>
+
+    <section class="acciones">
+      <button class="btn">Depositar</button>
+      <button class="btn">Comprar</button>
+    </section>
+
+    <section class="carteras-grid">
+      <!-- Lista dinámica de carteras -->
+      <div class="cartera" data-id="bn">
+        <p class="label">Guardadito</p>
+        <p>Saldo</p>
+        <p class="label">Binance</p>
+        <p class="saldo" id="bn">0.00</p>
+      </div>
+
+      <div class="cartera" data-id="at">
+        <p class="label">Guardadito</p>
+        <p>Saldo</p>
+        <p class="label">Atlantida</p>
+        <p class="saldo" id="at">0.00</p>
+      </div>
+
+      <div class="cartera" data-id="tg">
+        <p class="label">Guardadito</p>
+        <p>Saldo</p>
+        <p class="label">Tigo</p>
+        <p class="saldo" id="tg">0.00</p>
+      </div>
+
+      <div class="cartera" data-id="ef">
+        <p class="label">Guardadito</p>
+        <p>Saldo</p>
+        <p class="label">Efectivo</p>
+        <p class="saldo" id="ef">0.00</p>
+      </div>
+
+      <div class="cartera" data-id="az">
+        <p class="label">Guardadito</p>
+        <p>Saldo</p>
+        <p class="label">Azteca</p>
+        <p class="saldo" id="az">0.00</p>
+      </div>
+
+      <div class="cartera" data-id="bv">
+        <p class="label">Guardadito</p>
+        <p>Saldo</p>
+        <p class="label">Bitvictz</p>
+        <p class="saldo" id="bv">0.00</p>
+      </div>
+
+      <div class="cartera" data-id="py">
+        <p class="label">Guardadito</p>
+        <p>Saldo</p>
+        <p class="label">Peya</p>
+        <p class="saldo" id="py">0.00</p>
+      </div>
+
+      <div class="cartera" data-id="yj">
+        <p class="label">Guardadito</p>
+        <p>Saldo</p>
+        <p class="label">Yuuju</p>
+        <p class="saldo" id="yj">0.00</p>
+      </div>
+
+      <div class="cartera" data-id="ug">
+        <p class="label">Guardadito</p>
+        <p>Saldo</p>
+        <p class="label">UNGLYCASH</p>
+        <p class="saldo" id="ug">0.00</p>
+      </div>
+
+      <div class="cartera" data-id="oc">
+        <p class="label">Guardadito</p>
+        <p>Saldo</p>
+        <p class="label">Occidente</p>
+        <p class="saldo" id="oc">0.00</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
